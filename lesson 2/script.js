@@ -24,13 +24,26 @@ console.log(mainList);
 
 // Задать пользователю 3 раза вопрос "Какой тип товаров будем продавать?" и записать ответы в массив shopGoods
 
+for (let i = 0; i < 5; i++) {
+ let a =  prompt("Какой тип товаров будем продавать?", "");
  
-mainList.shopGoods[0] = prompt("Какой тип товаров будем продавать?", "");
-mainList.shopGoods[1] = prompt("Какой тип товаров будем продавать?", "");
-mainList.shopGoods[2] = prompt("Какой тип товаров будем продавать?", "");
+ if ((typeof(a)) === 'string' && (typeof(a)) === null && a != '' && a.length < 50) {
+   console.log('Все верно!');
+   mainList.shopGoods[i] = a;
+ } else{
+   
+ }
+}
 
-
-var  shopGoods = [answerOne, answerTwo, answerTree];
+if(time < 0){
+  console.log('Такого просто не может быть');
+} else if(time > 8 && time < 20){
+  console.log('Время работать')
+} else if(time < 24){
+  console.log('Уже слишком поздно');
+} else{
+  console.log('В сутках только 24 часа!')
+}
 console.log(shopGoods);
 
 
