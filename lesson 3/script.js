@@ -1,3 +1,22 @@
+
+function name(text){
+let text = gold;
+  console.log(text);
+}
+console.log(name);
+
+let str = "12.2";
+
+console.log(Math.round(str));
+
+let string = "12.2px";
+console.log(parseInt(string));
+console.log(parseFloat(string));
+
+
+
+
+
 // Первая будет спрашивать "Ваш бюджет?"
 // Вторая "Название вашего магазина?"
 
